@@ -1,0 +1,63 @@
+
+.grid{
+	display: grid;
+	grid-template-columns: auto auto auto auto auto;
+	justify-content: space-evenly;
+	grid-row-gap: 30px;
+	margin-top: 90px;
+}
+
+#next-button{
+	background-color: #3300FF;
+	margin-left: 80%;
+	margin-top: 25px;
+	width: 190px;
+	height: 40px;
+	border-radius: 20px;
+	padding-left: 5px;
+	color: #F8F8FF;
+	transition: all 0.5s ease-in-out 0.05s;
+
+}
+
+#next-button:hover {
+	transform: scaleX(1.2);
+	transform: scaleY(1.2);
+	opacity: 0.8;
+
+}
+.card:hover {
+	opacity:0.9;
+}
+
+
+@media only screen and (max-width:1100px){
+	.grid{
+		grid-template-columns: auto auto auto auto ;
+	}
+	#next-button{
+		margin-left: 70%;
+	}
+}
+
+@media only screen and (max-width:900px){
+	.grid{
+		grid-template-columns: auto auto auto  ;
+	}
+	#next-button{
+		margin-left: 60%;
+	}
+}
+
+@media only screen and (max-width:700px){
+	.grid{
+		grid-template-columns: auto auto ;
+	}
+	#next-button{
+		margin-left: 35%;
+	}
+}
+
+
+
+
